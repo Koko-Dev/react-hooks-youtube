@@ -1,0 +1,19 @@
+body {
+	background: rgb(216,243,220);
+	background: radial-gradient(circle, rgba(216,243,220,1) 0%, rgba(149,213,178,1) 20%, rgba(82,183,136,1) 48%, rgba(45,106,79,1) 74%, rgba(8,28,21,1) 100%) !important;
+
+	font-family: "Merienda", cursive !important;
+	letter-spacing: .025rem;
+	color: #081c15
+}
+
+div.ui.container div.search-bar.ui.segment,
+div.eleven.wide.column div div.ui.segment {
+	background-color: #d8f3dc;
+}
+
+div.item.video-item div.content div.header {
+	color: #d8f3dc;
+}
+
+
