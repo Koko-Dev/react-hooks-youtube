@@ -7,6 +7,7 @@ import useVideos from "../hooks/useVideos";
 
 const App = () => {
 	const [selectedVideo, setSelectedVideo] = useState(null);
+	const [videos, search] = useVideos('buildings');
 
 	// setSelectedVideo(response.data.items[0]);
 
