@@ -8,7 +8,7 @@ const useVideos = (defaultSearchTerm) => {
 		onTermSubmit(defaultSearchTerm);
 	}, []);
 
-	const onTermSubmit = async term => {
+	const search = async term => {
 		const response = await youtube.get('/search', {
 			params: {
 				q: term
@@ -18,7 +18,7 @@ const useVideos = (defaultSearchTerm) => {
 		setVideos(response.data.items);
 	};
 
-	return [videos, onTermSubmit];
+	return [videos, search];
 }
 
 export default useVideos;
