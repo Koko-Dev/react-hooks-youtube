@@ -9,7 +9,7 @@ const App = () => {
 	const [selectedVideo, setSelectedVideo] = useState(null);
 
 	// setSelectedVideo(response.data.items[0]);
-	
+
 	return (
 		<div className="ui container">
 			<SearchBar onTermSubmit={onTermSubmit}/>

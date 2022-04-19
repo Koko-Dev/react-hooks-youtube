@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import youtube from "../apis/youtube";
 
-const useVideos = () => {
+const useVideos = (defaultSearchTerm) => {
 	const [videos, setVideos] = useState([]);
 
 	useEffect(() => {
-		onTermSubmit('buildings');
+		onTermSubmit(defaultSearchTerm);
 	}, []);
 
 	const onTermSubmit = async term => {
