@@ -7,7 +7,7 @@ import useVideos from "../hooks/useVideos";
 
 const App = () => {
 	const [selectedVideo, setSelectedVideo] = useState(null);
-	const [videos, search] = useVideos('buildings');
+	const [videos, search] = useVideos('carrots');
 
 	// Note: Anytime we get a new list of videos or any
 	//  time videos changes, useEffect() will be called and
