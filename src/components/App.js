@@ -9,7 +9,12 @@ const App = () => {
 	const [selectedVideo, setSelectedVideo] = useState(null);
 	const [videos, search] = useVideos('buildings');
 
-	// setSelectedVideo(response.data.items[0]);
+	// Note: Anytime we get a new list of videos or any
+	//  time videos changes, we will run useEffect() and
+	//  select the very first video in that list.
+	useEffect(() => {
+		setSelectedVideo(videos[0]);
+	}, [videos]);
 
 	return (
 		<div className="ui container">
