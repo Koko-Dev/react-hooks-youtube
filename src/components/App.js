@@ -10,7 +10,7 @@ const App = () => {
 	const [videos, search] = useVideos('buildings');
 
 	// Note: Anytime we get a new list of videos or any
-	//  time videos changes, we will run useEffect() and
+	//  time videos changes, useEffect() will be called and
 	//  select the very first video in that list.
 	useEffect(() => {
 		setSelectedVideo(videos[0]);
